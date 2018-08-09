@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Shadiyah's Demo App</name>
+    <description>
+        Sample hello world application.
+    </description>
+    <author email="mangrushadiyah@gmail.com" href="http://phonegap.com">
+        Shadiyah Mangru
+    </author>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    
+    <platform name="android">
+        <icon density="ldpi" src="atComputer.png" />
+        <icon density="mdpi" src="atComputer.png" />
+        <icon density="hdpi" src="atComputer.png" />
+        <icon density="xhdpi" src="atComputer.png" />
+        <icon density="xxhdpi" src="atComputer.png" />
+        <icon density="xxxhdpi" src="atComputer.png" />
+        <splash density="land-ldpi" src="atComputer.png" />
+        <splash density="land-mdpi" src="atComputer.png" />
+        <splash density="land-hdpi" src="atComputer.png" />
+        <splash density="land-xhdpi" src="atComputer.png" />
+        <splash density="land-xxhdpi" src="atComputer.png" />
+        <splash density="land-xxxhdpi" src="atComputer.png" />
+        <splash density="port-ldpi" src="atComputer.png" />
+        <splash density="port-mdpi" src="atComputer.png" />
+        <splash density="port-hdpi" src="atComputer.png" />
+        <splash density="port-xhdpi" src="atComputer.png" />
+        <splash density="port-xxhdpi" src="atComputer.png" />
+        <splash density="port-xxxhdpi" src="atComputer.png" />
+    </platform>
+    <platform name="ios">
+    </platform>
+    
+    <platform name="wp8">
+    </platform>
+    
+    <platform name="windows">
+    </platform>
+    
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>
