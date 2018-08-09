@@ -28,13 +28,17 @@
     <div class="app">
         <h1>Shadiyah's Demo App</h1>
         <div>
-            <button id="demoButton" onclick="helloWorld()">a button</button>
+            <button type="button" id="demoButton">a button</button>
             <p id="buttonDemo" style="display: none">hello world!</p>
+            <p>hello</p>
         </div>
     </div>
     
     <script>
-        var counter = 0;
+    
+    $(document).ready(function(){
+        var counter=0;
+        $("#demoButton").click(function(){
         function helloWorld(){
             if(counter%2===0){
                 document.querySelector("#buttonDemo").style.display = "block";
@@ -44,6 +48,9 @@
             }
             counter++;
         }
+        helloWorld();
+        });
+    });
     </script>
     
     <script type="text/javascript" src="cordova.js"></script>
