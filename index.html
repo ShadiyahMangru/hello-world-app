@@ -28,17 +28,22 @@
     <div class="app">
         <h1>Shadiyah's Demo App</h1>
         <div>
-            <button id="demoButton">a button</button>
+            <button id="demoButton" onclick="helloWorld()">a button</button>
             <p id="buttonDemo" style="display: none">hello world!</p>
         </div>
     </div>
     
     <script>
-        $(document).ready(function(){
-            $("#demoButton").click(function(){
-                $("#buttonDemo").toggle();
-            })      
-        })
+        var counter = 0;
+        function helloWorld(){
+            if(counter%2===0){
+                document.querySelector("#buttonDemo").style.display = "block";
+            }
+            else{
+                document.querySelector("#buttonDemo").style.display = "none";
+            }
+            counter++;
+        }
     </script>
     
     <script type="text/javascript" src="cordova.js"></script>
